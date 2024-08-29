@@ -1,11 +1,16 @@
+import { Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Home from './pages/Home';
+
 function App() {
  
   return (
-    <>
-      <h1>Limpei meu React</h1>
-      <p>Limpei os arquivos desnecessários do meu React.js. 
-        Agora já posso iniciar!</p>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </div>
   )
 }
 
