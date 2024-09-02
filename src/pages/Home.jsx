@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
+import Timer from '../components/Timer';
 
 function Home() {
     const { user, logout } = useContext(AuthContext);
@@ -17,6 +18,9 @@ function Home() {
       ) : (
         <p>Você não está logado.</p>
       )}
+
+        <Timer />
+        
       </div>
     );
   }
